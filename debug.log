@@ -1,0 +1,3 @@
+[0923/143211.977:ERROR:file_io_win.cc(244)] SetEndOfFile: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+[1007/051650.338:ERROR:file_io_win.cc(244)] SetEndOfFile: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)
+[1007/061402.030:ERROR:file_io_win.cc(244)] SetEndOfFile: The requested operation cannot be performed on a file with a user-mapped section open. (0x4C8)

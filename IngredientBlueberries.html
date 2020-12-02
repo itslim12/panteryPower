@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueberries</title>
+	<link href="./bundles/css/style-starter.css" rel="stylesheet" type="text/css"><!-- Style-CSS -->
+	<!-- Template CSS -->
+	<link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+	<!-- Template CSS -->
+	<style>
+	</style>
+</head>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	body {font-family: Arial, Helvetica, sans-serif;}
+	
+	/* Full-width input fields */
+	input[type=text], input[type=password] {
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
+	
+	/* Set a style for all buttons */
+	button {
+	  background-color: #4c77af;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  cursor: pointer;
+	}
+	
+	button:hover {
+	  opacity: 0.8;
+	}
+	
+	/* Extra styles for the cancel button */
+	.cancelbtn {
+	  width: auto;
+	  padding: 10px 18px;
+	  background-color: #f44336;
+	}
+	
+	/* Center the image and position the close button */
+	.imgcontainer {
+	  text-align: center;
+	  margin: 24px 0 12px 0;
+	  position: relative;
+	}
+	
+	img.avatar {
+	  width: 40%;
+	  border-radius: 50%;
+	}
+	
+	.container {
+	  padding: 16px;
+	}
+	
+	span.psw {
+	  float: right;
+	  padding-top: 16px;
+	}
+	
+	/* The Modal (background) */
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	  padding-top: 60px;
+	}
+	
+	/* Modal Content/Box */
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	  border: 1px solid #888;
+	  width: 80%; /* Could be more or less, depending on screen size */
+	}
+	
+	/* The Close Button (x) */
+	.close {
+	  position: absolute;
+	  right: 25px;
+	  top: 0;
+	  color: #000;
+	  font-size: 35px;
+	  font-weight: bold;
+	}
+	
+	.close:hover,
+	.close:focus {
+	  color: red;
+	  cursor: pointer;
+	}
+	
+	/* Add Zoom Animation */
+	.animate {
+	  -webkit-animation: animatezoom 0.6s;
+	  animation: animatezoom 0.6s
+	}
+	
+	@-webkit-keyframes animatezoom {
+	  from {-webkit-transform: scale(0)} 
+	  to {-webkit-transform: scale(1)}
+	}
+	  
+	@keyframes animatezoom {
+	  from {transform: scale(0)} 
+	  to {transform: scale(1)}
+	}
+	
+	/* Change styles for span and cancel button on extra small screens */
+	@media screen and (max-width: 300px) {
+	  span.psw {
+		 display: block;
+		 float: none;
+	  }
+	  .cancelbtn {
+		 width: 100%;
+	  }
+	}
+	</style>
+	</head>
+
+<div id="page" class="page">
+<!-- Section Header for Login-->
+<section class="w3l-header-nav mobile-header">
+<header id="site-header" class="hny-header-top">
+	<div class="container">
+		<div class="d-grid nav-mobile-block header-align">
+			<input type="checkbox" id="nav">
+			<label class="nav" for="nav"></label>
+			<nav>
+				<ul class="menu">
+					<li class="propClone">
+						<form action="#" method="post" class="last">
+						<input type="hidden" name="cmd" value="_cart">
+						<input type="hidden" name="display" value="1">
+						<button style="outline: none; cursor: inherit;" value="">
+							<i class="fa fa-shopping-cart"></i>
+						</button>
+						</form>
+					</li>
+
+
+
+
+					<li class="propClone"><label onclick="document.getElementById('id01').style.display='block'" ; style="outline: none; cursor: inherit;">Login</label></li>
+					<li>|</li>
+					<li class="propClone"><label onclick="document.getElementById('id02').style.display='block'" ; style="outline: none; cursor: inherit;">Sign Up</label></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- Section Header for Login-->
+
+
+
+<body>
+	<!-- page -->
+	<div id="page" class="page">
+
+ 	<section class="w3l-header-nav mobile-header">
+ 		<div>
+ 			<header id="site-header" class="hny-header-top">
+ 				<div class="container">
+ 					<div class="d-grid nav-mobile-block header-align">
+ 						<div class="logo">
+							<a class="navbar-brand" href="home.html">
+							    <img src="bundles/Logo.png" alt="Your logo" title="Your logo" style="height: 150px; outline: none; cursor: inherit;">
+							 </a> 
+ 						</div>
+ 						<input type="checkbox" id="nav">
+ 						<label class="nav" for="nav"></label>
+ 						<nav>
+ 							<label for="drop" class="toggle">Menu</label>
+ 							<input type="checkbox" id="drop">
+ 							<ul class="menu">
+ 								<li class="propClone"><a href="home.html" style="outline: none; cursor: inherit;">Home</a></li>
+								 <li class="propClone"><a href="Recipes.html" style="outline: none; cursor: inherit;">Meal Plans</a></li>
+								 <li class="propClone"><a href="Ingredients.html" style="outline: none; cursor: inherit;">Ingredients</a></li>
+ 								<li class="propClone"><a href="about.html" style="outline: none; cursor: inherit;">About</a></li>
+ 								<li class="propClone"><a href="blog.html" style="outline: none; cursor: inherit;">Blog</a></li>
+ 								<!--//search-right-->
+ 								<li class="search-right">
+ 									<!--/search-right-->
+ 	
+ 										<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search" style="outline: none; cursor: inherit;">Search <span class="fa fa-search ml-3" aria-hidden="true" style="outline: none; cursor: inherit;"></span></a>
+ 										<!-- search popup -->
+ 										<div id="search" class="pop-overlay">
+ 											<div class="popup">
+ 												<form action="#" method="post" class="search-box">
+ 													<input type="search" placeholder="Search your Keyword" name="search" required="required" autofocus="">
+ 													<button type="submit" class="btn" style="outline: none; cursor: inherit;"><span class="fa fa-search" aria-hidden="true" style="outline: none; cursor: inherit;"></span></button>
+ 												</form>
+ 												<div class="browse-items">
+ 													<h3 class="hny-title two mt-md-5 mt-4">Search Keywords:</h3>
+ 												</div>
+ 											</div>
+ 											<a class="close" href="#close" style="outline: none; cursor: inherit;">×</a>
+ 										</div>
+ 								</li>
+ 							</ul>
+
+ 						</nav>
+ 						<div class="clearfix"></div>
+ 					</div>
+ 				</div>
+ 			</header>
+
+ 		</div>
+
+ 	</section><section>
+        <div class="container py-lg-5 py-md-4">
+            <div class="col-lg-4 mt-lg-0 mt-5">
+        <h3>Blueberries</h3>
+        <p></p>
+        <p></p>
+        </div>
+            <div class="row">
+                
+                 <div class="col-lg-4 mt-lg-0 mt-5">
+                    <img src="bundles/blueberry.jpg" class="img-fluid radius-image" alt="image" style="border-radius: 6px; border-color: rgb(33, 37, 41); border-style: none; border-width: 1px; outline: none; cursor: inherit;">
+                </div>
+                <div class="col-lg-4 col-md-6 align-self">
+                    <h3 style="">Closest Location</h3>
+                    <ul>
+                    <li>[Coles Express]</li>
+                    <li>Coles Central Melbourne CBD</li>
+                    <li>7:00 AM - 8:00 PM</li>
+                    <li>1.2 km away</li>
+                    <p>
+                        
+                    </p>
+                    <li>[Woolworths]</li>
+                    <li>87 XRay St, Bookshelf, 3000 </li>
+                    <li>7:00 AM - 8:00 PM</li>
+                    <li>1.8 km away</li>
+                    </ul>
+                    
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_cart" />
+						<input type="hidden" name="add" value="1" />
+						<input type="hidden" name="business" value="example@minicartjs.com" />
+						<input type="hidden" name="item_name" value="Blueberries" />
+						<input type="hidden" name="quantity" value="1" />
+						<input type="hidden" name="amount" value="1.00" />
+						<input type="hidden" name="currency_code" value="USD" />
+						<input type="hidden" name="shipping" value="1.00">
+						<input type="submit" name="submit" class="btn-style btn-primary btn mt-lg-5 mt-4" style="outline: none; cursor: inherit;" value="Add to cart" />
+					</form>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <h4>Closest to you</h4>
+                    			<div>
+				<iframe src="https://maps.google.com/maps?q=Coles%20Central%20Melbourne%20CBD&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0" allowfullscreen=""></iframe>
+			</div>
+                </div>
+               
+                <section>
+                    <div class="container py-lg-5 py-md-4">
+                        <div class="row">
+                             
+                            <div class="col-lg-8 ">
+                                <h3>Health Benefits </h3>
+                                <p>Blueberries are sweet, nutritious and wildly popular. Here are the highlights:</p>
+
+                                    <p>Blueberries are low in calories but high in nutrients.Blueberries are among the most nutrient-dense berries.</p>
+
+                                    <p>Blueberries are the king of antioxiant foods.Antioxidants protect your body from free radicals, which are unstable molecules that can damage your cells and contribute to aging and diseases, such as cancer.</p>
+
+                                    <p>Blueberries reduce DNA dmaange, which may help rotect against aging and cancer.</p>
+
+                                    <p>Blueberries protect cholesterol in your blood from becoming damanged.</p>
+                            </div>
+                            
+                           <div class="col-lg-4 mt-lg-0 mt-5">
+                                <img src="bundles/300x600_Half_Page_Banner.jpg" class="img-fluid radius-image" alt="image" style="outline: none; cursor: inherit;">
+                            </div>
+                            <div class="col-lg-3">
+                                <h3 class="editContent" style="outline: none; cursor: inherit;">Recommeded Recipes </h3>
+                            </div>
+	<section class="w3l-main-slider">
+ 		<div class="banner-content position-relative">
+ 			<div class="csslider infinity" id="slider1">
+ 				<input type="radio" name="slides" checked="checked" id="slides_1">
+ 				<input type="radio" name="slides" id="slides_2">
+ 				<input type="radio" name="slides" id="slides_3">
+ 				<ul>
+ 					<li class="propClone">
+						<div class="slider-info banner-view bg bg2" style="background-color: rgba(0, 0, 0, 0); margin-top: 0px; background-image: url(&quot;bundles/brown-rice1.jpg&quot;); outline: none; cursor: inherit;">
+							<div class="banner-info">
+								<div class="container-fluid">
+								<h3>Healthy Fried Rice</h3>
+								<p style="color: rgb(255, 255, 255); font-size: 15px; background-color: rgba(0, 0, 0, 0); font-family: &quot;Open Sans&quot;, sans-serif; outline: none; cursor: inherit;" contenteditable="true" spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="28" medium-editor-index="d6ade802-7858-7f88-6a4f-8bd796239958" data-placeholder="Type your text"></p><p>Serves: 4</p><p><span style="background-color: rgba(0, 0, 0, 0);">Time to make: 50 mins</span></p><p>Total cost: $18.00 / $4.50 per serve</p><p></p>
+									<a href="Food1.html" class="popup-with-zoom-anim play-view1 editContent" style="outline: none; cursor: inherit;">
+									<span class="video-play-icon">
+										<span class="fa fa-spoon" style="color: rgb(0, 0, 0); font-size: 16px; outline: none; outline-offset: -2px; cursor: inherit;" id="ui-id-23"></span>
+									</span>
+                                        <h6>Eat Now</h6></a>
+								</div>
+							</div>
+						</div>
+ 					</li>
+ 					<li class="propClone">
+						<div class="slider-info  banner-view banner-top1 bg bg2" style="background-color: rgba(0, 0, 0, 0); margin-top: 0px; background-image: url(&quot;bundles/Asian-Chicken-Rice-Bowl_EXPS_SDAS17_201063_D04_11_5b-1.jpg&quot;); outline: none; outline-offset: -2px; cursor: inherit;">
+							<div class="banner-info">
+								<div class="container-fluid">
+								<h3 style="outline: none; cursor: inherit;">Fried Rick with Chicken and beans</h3>
+								<p style="outline: none; cursor: inherit;"></p><p>Serves: 6</p><p>Time to make: 50 mins</p><p>Total cost: $24.00 / $4.00 per serve</p><p></p>
+									<a href="Food1.html" class="popup-with-zoom-anim play-view1 editContent" style="outline: none; cursor: inherit;">
+									<span class="video-play-icon">
+										<span class="fa fa-spoon" style="outline: none; cursor: inherit; outline-offset: -2px; color: rgb(0, 0, 0); font-size: 16px;" id="ui-id-24"></span>
+									</span>
+									<h6 class="editContent" style="outline: none; cursor: inherit; outline-offset: -2px;">Eat Now</h6>
+								</a>
+								</div>
+							</div>
+						</div>
+ 					</li>
+ 					<li class="propClone">
+						<div class="slider-info banner-view banner-top2 bg bg2" style="background-color: rgba(0, 0, 0, 0); margin-top: 0px; background-image: url(&quot;bundles/viet salad.jpg&quot;); outline: none; cursor: inherit;">
+							<div class="banner-info">
+							<div class="container-fluid">
+								<h3 style="outline: none; outline-offset: -2px; cursor: inherit;">Vietnamese Salad</h3>
+								<p style="outline: none; cursor: inherit; outline-offset: -2px;"></p><ol><li>Serves: 4</li></ol><p>Time to make: 50 mins</p><p>Total cost: $20.00 / $5.00 per serve</p><p></p>
+								<a href="Food1.html" class="popup-with-zoom-anim play-view1 editContent" style="outline: none; cursor: inherit;">
+									<span class="video-play-icon">
+										<span class="fa fa-spoon" style="color: rgb(0, 0, 0); font-size: 16px; outline: none; cursor: inherit;" id="ui-id-25"></span>
+									</span>
+									<h6 class="editContent" style="outline: none; outline-offset: -2px; cursor: inherit;">Eat Now</h6>
+								</a>
+
+							</div>
+						</div>
+						</div>
+ 					</li>
+ 				</ul>
+ 				<div class="arrows">
+ 					<label for="slides_1"></label>
+ 					<label for="slides_2"></label>
+ 					<label for="slides_3"></label>
+ 				</div>
+ 				<div class="navigation">
+ 					<div>
+ 						<label for="slides_1"></label>
+ 						<label for="slides_2"></label>
+ 						<label for="slides_3"></label>
+
+ 					</div>
+ 				</div>
+ 			</div>
+			 <!-- //banner -->
+ 		</div>
+ 		<!-- /banner-slider-->
+ 	</section>     
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section><!-- footer-66 -->
+	<!-- //about--><!-- footer-66 -->
+	<footer class="w3l-footer">
+		<section class="footer-inner-main" style="outline: rgba(233, 94, 94, 0.5) solid 2px; outline-offset: -2px; cursor: pointer;">
+			<div class="footer-hny-grids py-5">
+				<div class="container py-lg-4">
+					<div class="text-txt">
+						<div class="right-side">
+							<div class="row footer-about">
+							</div>
+							<div class="row footer-links">
+
+								<div class="col-md-2 col-sm-3 sub-two-right mt-1">
+									<h6 style="outline: none; cursor: inherit;">Information</h6>
+									<ul class="footer">
+										<li><a href="Home.html" style="outline: none; cursor: inherit;">Home</a></li>
+										<li><a href="Recipes.html" style="outline: none; cursor: inherit;">Recipes</a></li>
+										<li><a href="about.html" style="outline: none; cursor: inherit;">About Us</a></li>
+									</ul>
+								</div>
+								<div class="col-md-2 col-sm-3 sub-two-right mt-1">
+									<h6  style="outline: none; cursor: inherit;"><br></h6><ul class="footer">
+										<li><a href="blog.html" style="outline: none; cursor: inherit;">Blogs</a> </li>
+										<li><a href="TermsofUse.html" style="outline: none; cursor: inherit;">Terms of Use</a></li>
+										<li><a href="SiteMap.html" style="outline: none; cursor: inherit;">Sitemap</a></li>
+									</ul>
+								</div>
+								<div class="col-md-4 col-sm-3 sub-two-right mt-1">
+								    	<img class="img-fluid" src="bundles/Logo.png" style="border-radius: 1200px; border-color: rgb(33, 37, 41); border-style: none; border-width: 1px; outline: none; cursor: inherit;">
+								</div>
+								<div class="col-md-3 col-sm-3 sub-two-right mt-1">
+								    <h6  style="outline: none; cursor: inherit;">Contact us</h6>
+										<p  style="outline: none; cursor: inherit;">99 Bourke St, Melbourne VIC 3000</p>
+										<p style="outline: none; cursor: inherit;">Contact@PantryPower.com</p>
+										<p c style="outline: none; cursor: inherit;">01 2345 7890</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="below-section editContent" style="outline: none; cursor: inherit;">
+				<div class="container">
+					<div class="copyright-footer">
+						<div class="columns text-lg-left">
+							<p>© 2020 SADSLEEPYBOIS. All rights reserved | Designed &amp; Template by W3Layouts 
+						</p></div>
+
+						<ul class="social text-lg-right">
+							<li><a href="#facebook" style="outline: none; cursor: inherit;"><span class="fa fa-facebook" aria-hidden="true" style="outline: none; cursor: inherit;"></span></a>
+							</li>
+							<li><a href="#linkedin" style="outline: none; cursor: inherit;"><span class="fa fa-linkedin" aria-hidden="true" style="outline: none; cursor: inherit;"></span></a>
+							</li>
+							<li><a href="#twitter" style="outline: none; cursor: inherit;"><span class="fa fa-twitter" aria-hidden="true" style="outline: none; cursor: inherit;"></span></a>
+							</li>
+							<li><a href="#google" style="outline: none; cursor: inherit;"><span class="fa fa-google-plus" aria-hidden="true" style="outline: none; cursor: inherit;"></span></a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- copyright -->
+		</section>
+	</footer>
+	<!--//footer-66 --></div><!-- /#page -->
+	<div id="id01" class="modal">
+  
+		<form class="modal-content animate" action="Customer.html" method="post">
+		  <div class="imgcontainer">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<img src="./bundles/Logo.png" alt="PanteryPower" class="PanteryPower">
+		  </div>
+	  
+		  <div class="container">
+			<label for="uname"><b>Login</b></label>
+			<input type="text" placeholder="Enter Login Name" name="lname" required>
+	  
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+			  
+			<button type="submit">Login</button>
+			<label>
+			  <input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		  </div>
+	  
+		  <div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		  </div>
+		</form>
+	  </div>
+
+	  <div id="id02" class="modal">
+  
+		<form class="modal-content animate" action="Customer.html" method="post">
+		  <div class="imgcontainer">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<img src="./bundles/Logo.png" alt="PanteryPower" class="PanteryPower">
+		  </div>
+	  
+		  <div class="container">
+			
+			<label for="email"><b>Email</b></label>
+			<input type="text" placeholder="Enter Email" name="email" id="email" required>
+	  
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" id="username" required>
+	  
+			<label for="fullname"><b>Full name</b></label>
+			<input type="text" placeholder="Enter Full name" name="fullname" id="fullname" required>
+	  
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+	  
+			<label for="psw-repeat"><b>Repeat Password</b></label>
+			<input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+		  
+			  
+			<button type="submit">Login</button>
+			<label>
+			  <input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		  </div>
+	  
+		  <div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		  </div>
+		</form>
+	  </div>
+
+	<!--//footer-66 --></div><!-- /#page -->
+	<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+		var modal = document.getElementById('id02');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		</script>
+	<script src="./assets/js/minicart.js"></script>
+	<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+	</script>
+</body></html>
